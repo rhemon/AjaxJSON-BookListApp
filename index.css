@@ -1,0 +1,22 @@
+body {
+  background: #ccc;
+}
+.jumbotron {
+  height: 550px;
+}
+#booksBox h1 {
+  border-bottom: 1px dashed #191919;
+  margin: auto auto;
+}
+#booksBox h3 {
+  margin-top: 20px 0;
+}
+#booksBox p{
+  font-size: 1.2em;
+}
+#booksBox img {
+  float: left;
+  width: 200px;
+  height: 259px;
+  margin: 20px 20px;
+}

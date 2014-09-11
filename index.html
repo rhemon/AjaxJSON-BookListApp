@@ -1,0 +1,44 @@
+<!Doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AJAX and JSON - Book List Application</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/jquery-ui.min.css"/>
+  <link rel="stylesheet" href="./index.css"/>
+
+  <script src="js/respond.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="row jumbotron">
+      <a href="#" id="prev" class="btn btn-primary btn-xs pull-left">Prev</a>
+      <a href="#" id="next" class="btn btn-primary btn-xs pull-right">Next</a>
+      <br/><br/>
+      <div id="booksBox">
+      </div>
+    </div>
+  </div>
+  <script id="booksTemplate" type="text/template">
+  {{#books}}
+    <div class="book">
+      <h1>{{name}}</h1>
+      <img src="images/{{image}}" class="img-responsive img-circle" />
+      <h3>By {{author}}</h3>
+      <p>{{summary}}</p>
+    </div>
+  {{/books}}
+  </script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.03/jquery.cycle.all.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
